@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Inspiration&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Bruno Ace SC', cursive;
+    
+}
+.all{
+width: 100vw;
+height: 100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-family: 'Bruno Ace SC', cursive;
+}
+body{
+   background-size: cover;
+    color: aliceblue;
+    font-family: 'Bruno Ace SC', cursive;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+.box{
+    gap: 30px;
+}
+p{
+    font-size: 15px;
+    border-bottom: 50px;
+    border-top: 50px;
+}
+h1{
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+   margin-top: 50px;
+   font-weight: 400;
+}
+.box{
+    height: 50;
+    width: 50;
+    text-align: center;
+}
+.box small{
+    font-size: 10px;;
+}    
+@media(min-width:570px)
+{
+p{
+font-size: 19px;
+}
+.h1{
+    font-size: 100px;
+}
+.box h2{
+    font-size: 30px;
+}
+.newyear
+{
+    font-size: 100px;
+    padding: 20px;
+}
+.box small{
+    font-size: 15px;
+}
+}
+@media(min-width:768px){
+.newyear
+{
+    font-size: 150px;
+}
+p{
+    font-size: 25px;
+}
+.box h2{
+    font-size: 50px;
+}
+.box small{
+    font-size: 20px;
+}
+}
+/* Adjust the size of the boxes and text for better responsiveness */
+.box h2 {
+    font-size: 2.5rem; /* Increase font size for countdown numbers */
+    padding: 10px;
+}
+
+.counter {
+    gap: 20px; /* Increase the gap between countdown boxes */
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* Glassmorphism effect for the countdown boxes */
+.box {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Apply the glass blur effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Thin border for glass effect */
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 20px;
+    backdrop-filter: blur(5px); /* Blur background behind counter */
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Light transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Styling for the heading and p elements with glass effect */
+.newyear {
+    font-size: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button for Dark Mode */
+button {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .box h2 {
+        font-size: 50px;
+    }
+    .newyear {
+        font-size: 150px;
+        padding: 13px;
+    }
+}
+
